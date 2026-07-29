@@ -38,8 +38,6 @@ for i, num in enumerate(nums):
     seen[num] = i
 ```
 
-`enumerate(nums)`는 인덱스 `i`와 값 `num`을 함께 꺼낸다.
-
 ## 시간·공간 복잡도
 
 - 처음 접근: 시간 `O(n²)`
