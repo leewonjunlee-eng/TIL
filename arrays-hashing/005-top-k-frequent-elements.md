@@ -16,8 +16,6 @@ language: Python
 check[num] = check.get(num, 0) + 1
 ```
 
-check.get(num, 0)은 num이 이미 있으면 현재 횟수를 가져오고, 아직 없으면 0을 사용한다.
-
 그 다음 bucket[등장 횟수]에 해당 숫자를 넣는다.
 
 ```python
@@ -34,8 +32,6 @@ for num, count in check.items():
 ```python
 for count in range(len(bucket) - 1, 0, -1):
 ```
-
-range(시작, 끝_직전, 변화량)에서 변화량이 -1이므로 마지막 인덱스부터 1까지 감소하며 반복한다. bucket[0]에는 0번 등장한 숫자가 없어서 확인하지 않는다.
 
 ## 시간·공간 복잡도
 
