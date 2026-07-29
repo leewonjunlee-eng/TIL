@@ -29,13 +29,6 @@ language: Python
 - 시간: 평균 O(n)
 - 공간: O(n)
 
-## 문법 및 기억할 점
-
-- `set(nums)`는 중복을 제거한다.
-- set에서 `num in numbers` 검색은 평균 O(1)이다.
-- 리스트에서 `in`을 사용하면 O(n)이므로 이 문제에서는 set을 사용한다.
-- `num - 1 not in numbers`로 연속 수열의 시작점만 찾는다.
-
 ## 코드
 
 ```python
