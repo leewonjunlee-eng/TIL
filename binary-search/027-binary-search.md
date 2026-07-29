@@ -22,7 +22,6 @@ language: Python
 
 - while left < right로 작성하면 left == right인 마지막 후보를 검사하지 못할 수 있다.
 - 닫힌 구간 [left, right]을 사용하는 경우 반복 조건은 left <= right여야 한다.
-- //는 나눗셈의 몫을 구하는 연산자이며, 가운데 인덱스를 정수로 만들 때 사용한다.
 
 ## 다음에 기억할 한 줄
 
