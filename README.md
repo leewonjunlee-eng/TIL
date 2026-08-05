@@ -24,3 +24,31 @@ arrays-hashing/
 - Python으로 풉니다.
 - 하루 한 문제를 목표로 하되, 억지 커밋보다 이해한 내용을 남깁니다.
 - 제출 코드와 회고는 직접 작성합니다.
+
+
+## Codespace and SSH setup
+매일 문제 하나씩
+ssh -i /workspaces/TIL/Second_Brain.key ubuntu@134.185.105.21
+ssh -i /workspaces/TIL/Second_Brain.key -v ubuntu@134.185.105.21
+ssh -i /workspaces/TIL/Second_Brain.key -L 9119:127.0.0.1:9119 -L 3000:127.0.0.1:3000 ubuntu@134.185.105.21
+ssh -i /workspaces/TIL/Second_Brain.key -L 3000:127.0.0.1:3000 ubuntu@134.185.105.21
+
+
+
+http://127.0.0.1:9119/
+http://127.0.0.1:3000/
+
+
+{
+    "sshfs.configs": [
+        
+        {
+            "name": "oracle-second-brain",
+            "host": "134.185.105.21",
+            "port": 22,
+            "type": "ssh",
+            "username": "ubuntu",
+            "privateKeyPath": "/workspaces/TIL/Second_Brain.key"
+        }
+    ]
+}
